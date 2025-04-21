@@ -1,8 +1,11 @@
 import React from 'react'
+import Homepage from './components/Homepage'
 
-const App = () => {
+function App(){
   return (
-    <div>App</div>
+    <div>
+      <Homepage />
+    </div>
   )
 }
 
