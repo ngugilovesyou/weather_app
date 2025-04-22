@@ -90,7 +90,7 @@ weather_app/
 │   ├── .env
 │   └── requirements.txt
 │
-├── frontend/             # React app (Vite + TS + Tailwind)
+├── client/             # React app (Vite + TS + Tailwind)
 │   ├── src/
 │   ├── public/
 │   └── vite.config.ts
