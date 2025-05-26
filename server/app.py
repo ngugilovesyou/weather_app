@@ -9,6 +9,10 @@ CORS(app)
 load_dotenv()
 OPENWEATHERMAP_API_KEY = os.getenv('OPENWEATHERMAP_API_KEY')
 
+@app.route('/')
+def index():
+    return 'Hello, World!'
+
 @app.route('/api/weather', methods=['GET'])
 def get_weather():
     city = request.args.get('city')
