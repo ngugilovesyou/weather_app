@@ -8,7 +8,7 @@ function Homepage() {
 
   const fetchWeather = async (city: string) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/weather?city=${city}`);
+      const response = await fetch(`https://weather-app-e5kg.onrender.com/api/weather?city=${city}`);
       const data = await response.json();
       if (!response.ok) {
         throw new Error(data.error || "Error fetching weather data");
